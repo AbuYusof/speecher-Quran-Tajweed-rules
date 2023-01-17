@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><processors>
+<processor match="(الم|ص ۚ وَالْقُرْآنِ ذِي الذِّكْرِ|ن ۚ وَالْقَلَمِ وَمَا يَسْطُرُونَ|ق ۚ وَالْقُرْآنِ الْمَجِيدِ|حم|المص|طسم|يس|عسق|طه)[(1)]" replace=" هُنا.بداية ٱلسورة تُنطَق حروف مقطعة.مِثَال.نُّ وْوْوْوْوْنّْ.وَٱلقَلَمِ وَمَا يَسْطُرُون." regex="true" match_case="true"/>
+<processor match="(نْيَا|نْوَا)" replace=" هُنا.إظهار مُطلَقٌ.مِثَال.في ٱلدُّنيَا." regex="true" match_case="true"/>
+<processor match="[0-9]" replace="" regex="true" match_case="true"/>
+<processor match="(المر ۚ|الر ۚ|طس ۚ)" replace=" هُنا.بداية ٱلسورة تُنطَق حروف مقطعة.مِثَال.نُّ وْوْوْوْوْنّْ.وَٱلقَلَمِ وَمَا يَسْطُرُون." regex="true" match_case="true"/>
+<processor match="(نْ|ً|ٍ|ٌ|ًا|ًّى|ًى|ًّا)((ي| ي|و| و)(َ|ِ|ُ|ّ))" replace=" هُنا. إدغام بِغُننَةٍ ناقص.ط. مِثَال. فَمَيّْيَعْمَل. مِّوّْوَاق. " regex="true" match_case="true"/>
+<processor match="(نْ|ً|ٍ|ٌ|ًا|ًّى|ًى|ًّا)((ر| ر|ل| ل)(َ|ِ|ُ|ّ))" replace=" هُنا. إدغام بِغَيْرِ غُنَّةٍ. مِثَال.  مِرّْرَسُولٍ. مِلّْلِقَائِهِ. " regex="true" match_case="true"/>
+<processor match="(نْ|ً|ٍ|ٌ|ًا|ًّى|ًى|ًّا)((أ| أ|إ| إ|ء| ء|آ| آ|ه| ه|ع| ع|ح| ح|غ| غ|خ| خ)(َ|ِ|ُ|ّ))" replace=" هُنا. إِظهَار. مِثَال.عَذَابٌ عَظِيمٌ. " regex="true" match_case="true"/>
+<processor match="(نْ|ً|ٍ|ٌ|ًا|ًّى|ًى|ًّا)((ب| ب)(َ|ِ|ُ|ّ))" replace="هُنا. إقلاب. مِثَال. مِمّْبَعْدِ." regex="true" match_case="true"/>
+<processor match="(نْ|ً|ٍ|ٌ|ًا|ًّى|ًى|ًّا)((ص| ص|ذ| ذ|ث| ث|ك| ك|ج| ج|ش| ش|ق| ق|س| س|د| د|ط| ط|ز| ز|ف| ف|ت| ت|ض| ض|ظ| ظ)(َ|ِ|ُ|ّ))" replace=" هُنا.إخفاءٌ.مِثَال.فَمَمّْشَاءَ.أَمّْزَلنَا. " regex="true" match_case="true"/>
+<processor match=" ۗ " replace=" هُنا.وقفٌ أَولَى. ويجب تَسكِينُ ٱلحَرفُ ٱلأخير هنا." regex="true" match_case="true"/>
+<processor match=" ۘ " replace=" هُنا.وقفٌ لازم. ويجب تَسكِينُ ٱلحَرفُ هنا." regex="true" match_case="true"/>
+<processor match=" ۙ " replace=" هُنا.وقفٌ ممنوع." regex="true" match_case="true"/>
+<processor match=" ۜ " replace=" هُنا. سَكْتَةٌ ويجب تَسكِينُ ٱلحَرفُ هنا." regex="true" match_case="true"/>
+<processor match=" ۛ " replace=" هُنا. سَكْتَةٌ في أحد ٱلموضعين . ويجب تَسكِينُ ٱلحَرفُ ٱلأخير هنا." regex="true" match_case="true"/>
+<processor match="(َ اللَّه|وَاللَّه|()اللَّه|()اللَّهُمَّ|َ اللَّهُمَّ |آللَّه)" replace=". هنا.تفخيم لامُ لفظ ٱلجَلَالَةِ لأنه أتى قبلها فتح أو حرف مَدٍّ أو جَائتْ بداية ٱلاية.مِثَال . الَّذِي يَصْلَى." regex="true" match_case="true"/>
+<processor match=" ۚ " replace=" هُنا.وقفٌ جائز. ويجب تَسكِينُ ٱلحَرفُ ٱلأخير هنا." regex="true" match_case="true"/>
+<processor match="(الْ)(أ|ٱ|ء|إ|آ|ب|ج|د|ه|و|ز|ح|ط|ي|ك|ل|م|ن|س|ع|ف|ص|ق|ر|ش|ت|ث|خ|ذ|ض|ظ|غ|ل|ا)" replace=" هُنا. لامٌ قَمَرِيَّهْ. مِثَال.وَالْقَمَرْ." regex="true" match_case="true"/>
+<processor match="(نْ|ً|ٍ|ٌ|ًا|ًّى|ًى|ًّا)((ب| ب)(َ|ِ|ُ|ّ))" replace=" هُنا حُكْمْ. إقلاب. مِثَال .مِمّْبَعْدِ" regex="true" match_case="true"/>
+<processor match="(مْ)(( م)(َ|ِ|ُ|ّ))" replace=" هُنا.إدغام متماثِلَيْن حرفُ ٱلمِيم." regex="true" match_case="true"/>
+<processor match=" ۖ " replace=" هنا.وقفٌ جائز وٱلوصل أَولَى. ويجب تَسكِينُ ٱلحَرفُ ٱلأخير هنا إن وَقَفْنَا." regex="true" match_case="true"/>
+<processor match="ِ اللَّهِ|لِلَّهِ" replace=" هُنا.تُرقَّق لامُ لَفْظُ ٱلجَلَالَةِ لأنه أتى قبلها كسر أو لامها مكسورة .مِثَال.في سَبِيلِ ٱللَّهِ.لِلَّهِ." regex="true" match_case="true"/>
+<processor match="(ال)(أ|ٱ|ء|إ|آ|ب|ج|د|ه|و|ز|ح|ط|ي|ك|ل|م|ن|س|ع|ف|ص| ق|ر|ش|ت|ث|خ|ذ|ض|ظ|غ|ل|ا)" replace=" هُنا. لامٌ شَمسِيَّهْ. مِثَال.وَسَخَّرَ الشَّمسَ. " regex="true" match_case="true"/>
+<processor match="(قْ|طْ|بْ|جْ|دْ)(أ|ٱ|ء|إ|آ|ب|ج|د|ه|و|ز|ح|ط|ي|ك|ل|م|ن|س|ع|ف|ص| ق|ر|ش|ت|ث|خ|ذ|ض|ظ|غ|ل|ا)" replace=" هُنا.قلقلة صغرى." regex="true" match_case="true"/>
+<processor match="((ً|ٍ|ٌ|ًا|ا|ًّا|َ|ِ|ُ|ٰ|ّ)[(])" replace="().هُنا. وَقْفٌ عند نِهَايَةِ ٱلايَةِ وجب تسكين اخر حرف منها. مِثَال. إِنَّا أَعْطَيْنَاكَ ٱلْكَوْثَرْ" regex="true" match_case="true"/>
+<processor match="(()ا| ا)((ب|ج|د|ه|و|ز|ح|ط|ي|ك|ل|م|ن|س|ع|ف|ص|ق|ر|ش|ت|ث|خ|ذ|ض|ظ|غ|ل)((َ|ِ|ُ|ّ|ْ)))_" replace=" هُنا.ا. ساكن لا يُنطَق." regex="true" match_case="true"/>
+<processor match="(قْ()|طْ()|بْ()|جْ()|دْ()|قْ |طْ |بْ |جْ |دْ )" replace=" هُنا.قلقلة كبرى." regex="true" match_case="true"/>
+<processor match="(نْ|ً|ٍ|ٌ|ًا|ًّى|ًى|ًّا)((ن| ن|م| م)(َ|ِ|ُ|ّ))" replace=".هُنا. إدغام بِغُننَةٍ كَامِل. مِثَال. مِنّْنِعْمَةٍ. مِمّْمَاءٍ. " regex="true" match_case="true"/>
+<processor match="(مْ |مْ)((ب)(َ|ِ|ُ|ّ))" replace="ب .هُنا.إخفاء شفوي للميم ٱلساكنة عند ٱلباء.مِثَالٌ.يَوم هُوْبَارِزُون." regex="true" match_case="true"/>
+<processor match="((مْ |مْ)((أ|ٱ|ء|إ|آ|ج|د|ه|و|ز|ح|ط|ي|ك|ل|ن|س|ع|ف|ص|ق|ر|ش|ت|ث|خ|ذ|ض|ظ|غ|ل)(َ|ِ|ُ|ّ|ْ)))" replace=" .هُنا.إظهار شفوي للميم ٱلساكنة.مِثَال.أَنعَمْتَ عَلَيْهِم." regex="true" match_case="true"/>
+<processor match="ٰ" replace=" هُنا.مَدٌّ طبيعيْ بمقدار حركة." regex="true" match_case="true"/>
+<processor match="((آ |آ)((ء|ج|د|ه|و|ز|ح|ط|ي|ك|ل|ن|س|ع|ف|ص|ق|ر|ش|ت|ث|خ|ذ|ض|ظ|غ|ل)(َ|ِ|ُ|ّ|ْ)))" replace="هُنا.مَدٌّ طبيعيْ بمقدار حركة." regex="true" match_case="true"/>
+<processor match="(( ا)((ب|ء|ج|د|ه|و|ز|ح|ط|ي|ك|ن|س|ع|ف|ص|ق|ر|ش|ت|ث|خ|ذ|ض|ظ)(ّ|ْ)))" replace=" هُنا.ا. ساكن لا يُنطَق." regex="true" match_case="true"/>
+</processors>
